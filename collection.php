@@ -18,7 +18,7 @@ require '.' . DIRECTORY_SEPARATOR . 'collectionDBConnection.php';
         <div class="header">
             <h1>US Sitcom</h1>
             <h1>Quotes Collection</h1>
-            <audio src="theoffice.mp3" controls></audio>
+            <audio src="images/theoffice.mp3" controls></audio>
         </div>
         <img class = "castPic" src="images/background.jpg" alt="picture of the cast of The Office"/>
         <div class = "grids">
