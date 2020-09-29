@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <?php
 require_once '.' . DIRECTORY_SEPARATOR . 'displayDBContentFunction.php';
-require '.' . DIRECTORY_SEPARATOR . 'collectionDBConnection.php';
+require_once '.' . DIRECTORY_SEPARATOR . 'dbConnectionFunction.php';
+require_once '.' . DIRECTORY_SEPARATOR . 'getQuotesDataFunction.php';
+
+$db=dbConnection();
+$quotes = getQuotesData($db);
 ?>
 
 <html lang="en">
