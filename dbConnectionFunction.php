@@ -1,12 +1,11 @@
 <?php
 
-
 /**Function creates a connection to the database
  *
  * @return PDO
  */
-function dbConnection() {
-    $db = new PDO ('mysql:host=db; dbname=OfficeQuotesDB', 'root', 'password');
+function dbConnection() :PDO {
+    $db = new PDO ('mysql:host=db; dbname=OfficeQuotesDB1', 'root', 'password');
     $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     return $db;
 }
