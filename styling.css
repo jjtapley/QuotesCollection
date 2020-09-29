@@ -32,6 +32,11 @@ body {
    padding: 2%;
 }
 
+.collectionItems p:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 .displayDB {
     border: 2px solid #000000;
     border-radius: 9%;
