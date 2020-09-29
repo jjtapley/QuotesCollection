@@ -1,21 +1,29 @@
 <?php
 
-function displayDBContent($quotes) {
+/**Function takes the field from the DB and converts them into readable sections that can be used on front end.
+ *
+ * @param array $quotes
+ *
+ * @return string
+ */
+function displayDBContent(array $quotes) :string {
+    $display = '';
     foreach ($quotes as $field) {
-        echo '<div class="displayDB">';
-            echo '<div class="images">';
-                echo '<img src="' . $field['url'] . '"/>';
-            echo '</div>';
-            echo '<div class="collectionItems">';
-                echo '<h3>Quote:</h3>';
-                echo '<p>' . $field['quote'] . '</p>';
-                echo '<h3>Who Said It:</h3>';
-                echo '<p>' . $field['whoSaidIt'] . '</p>';
-                echo '<h3>Episode:</h3>';
-                echo '<p>' . $field['episode'] . '</p>';
-                echo '<h3>HilaritOMeter:</h3>';
-                echo '<p>' . $field['hilarity-ometer'] . '</p>';
-            echo '</div>';
-        echo '</div>';
+       $display .= '<div class="displayDB">
+                     <div class="images">
+                         <img src="' . $field['url'] . '" alt="Image of ' . $field['whoSaidIt'] . ' from The Office US TV Show."/>
+                     </div>
+                     <div class="collectionItems">
+                         <h3>Quote:</h3>
+                         <p>' . $field['quote'] . '</p>
+                         <h3>Who Said It:</h3>
+                         <p>' . $field['whoSaidIt'] . '</p>
+                         <h3>Episode:</h3>
+                         <p>' . $field['episode'] . '</p>
+                         <h3>HilaritOMeter:</h3>
+                         <p>' . $field['hilarity-ometer'] . '</p>
+                    </div>
+                </div>';
+        }
+        return $display;
     }
-}
