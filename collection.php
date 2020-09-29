@@ -25,6 +25,7 @@ $quotes = $query->fetchAll();
         <div class="header">
             <h1>US Sitcom</h1>
             <h1>Quotes Collection</h1>
+            <audio src="theoffice.mp3" controls></audio>
         </div>
         <img class = "castPic" src="background.jpg" alt="picture of the cast of The Office"/>
         <div class = "grids">

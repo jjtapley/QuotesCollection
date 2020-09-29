@@ -10,12 +10,13 @@
 body {
     text-align: center;
     padding: 0;
-    font-family: "American Typewriter";
+    font-family: "American Typewriter", sans-serif;
     background-color: #faf3dc;
 }
 
 .headerImage{
     padding-top: 2%;
+    width: 60%;
 }
 
 .castPic {
@@ -31,23 +32,44 @@ body {
    padding: 2%;
 }
 
+.displayDB {
+    border: 2px solid #000000;
+    border-radius: 9%;
+    margin: 2%;
+}
+
 h3 {
     text-transform: uppercase;
 }
 
 .grids img {
     width: auto;
-    height: 200px;
+    height: 180px;
     padding: 0 10px;
+    margin-top: 3%;
+    /*transition: height 2s;*/
+    border-radius: 10%;
 }
 
-.collectionItems {
-    border: 2px solid #000000;
-    height: 600px;
+.grids img:hover {
+    /*height: 200px;*/
+    box-shadow: inset 0 0 0 25px #808080;
 }
 
 .grids {
     display: grid;
     padding: 4% 3%;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grids {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .grids {
+        grid-template-columns: 1fr;
+    }
 }

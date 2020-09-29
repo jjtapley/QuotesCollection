@@ -20,7 +20,7 @@ function displayDBContent($quotes) {
                 echo '<p>' . $field['episode'] . '</p>';
             echo '</div>';
             echo '<div>';
-                echo '<h3>Hilarit-O-Meter:</h3>';
+                echo '<h3>HilaritOMeter:</h3>';
                 echo '<p>' . $field['hilarity-ometer'] . '</p>';
                 echo '</div>';
             echo '</div>';
