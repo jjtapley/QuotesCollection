@@ -6,12 +6,11 @@ $db -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $query = $db->prepare('SELECT * FROM `quotes` INNER JOIN `images` ON `quotes`.`id` = `images`.`quotes-ID`');
 $query->execute();
 $quotes = $query->fetchAll();
-
 ?>
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset ="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +30,6 @@ $quotes = $query->fetchAll();
         <div class = "grids">
             <?php displayDBContent($quotes);?>
         </div>
-
     </body>
 </html>
 
