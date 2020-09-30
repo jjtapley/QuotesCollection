@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <?php
-
+require_once '.' . DIRECTORY_SEPARATOR . 'dbConnectionFunction.php';
+require_once '.' . DIRECTORY_SEPARATOR . 'sendQuotesDataFunction.php';
+$db = dbConnection();
 ?>
 
 <html>
@@ -12,13 +14,12 @@
         <link type="text/css" rel="stylesheet" href="normalize.css">
         <link type="text/css" rel="stylesheet" href="styling.css">
     </head>
-
     <body>
         <header class = "page2header">
             <h1>Add a Quote</h1>
         </header>
         <main>
-            <form method="post" action="sendInputToDB.php">
+            <form method="post" action="sendQuotesDataFunction.php">
                 <label for="postQuote">Quote:</label>
                 <input type="text" id="quote" name="quote" onfocus="this.value=''" value="-- Type quote - don't worry about quote marks! --">
                 <label for="character">Who Said It?:</label>
@@ -92,13 +93,33 @@
                     <option value="27">27</option>
                     <option value="28">28</option>
                 </select>
-                <label for="url">Add an image - copy and paste image URL here:</label>
-                <input type="url" name="URL" id="url">
+                <label for="rating">Hilaritometer Rating (1-10):</label>
+                <select id="rating" name="rating">
+                    <option hidden disabled selected value> -- select an option -- </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
                 <input type="submit" value="Submit">
             </form>
+
+            <?php
+            $quote = $_POST['quote'];
+            $character = $_POST['charName'];
+            $episode = "'" . $_POST['epName'] . "'" . " - Season " . $_POST['season'] . ", Episode " . $_POST['epNum'];
+            $rating = $_POST['rating'];
+            selectImage($character);
+            sendQuotesData($db, $quote, $character, $episode, $rating);
+
+            ?>
+
         </main>
-
     </body>
-
-
 </html>
