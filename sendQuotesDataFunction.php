@@ -2,9 +2,7 @@
 
 require_once '.' . DIRECTORY_SEPARATOR . 'addQuote.php';
 
-
-/**Function takes in user input and inserts into database
- *
+/**Function takes in user input from form and inserts into database
  *
  * @param $db
  * @param $quote
@@ -14,7 +12,7 @@ require_once '.' . DIRECTORY_SEPARATOR . 'addQuote.php';
  *
  * @return array
  */
-function sendQuotesData($db, $quote, $character, $episode, $rating) {
+function sendQuotesData(PDO $db, string $quote, string $character, string $episode, int $rating) :void {
     $query = $db->prepare('INSERT INTO `quotes` (`quote`, `whoSaidIt`, `episode`, `hilarity-ometer`) VALUES (:quote, :charName, :episode, :rating)');
     $query->execute([':quote'=>$quote, ':charName'=>$character, ':episode'=>$episode, ':rating'=>$rating]);
 }
