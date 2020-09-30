@@ -28,6 +28,9 @@ $quotes = getQuotesData($db);
         <div class = "grids">
             <?php echo displayDBContent($quotes);?>
         </div>
+        <button class="addQuoteLink">
+            <a href="addQuote.php">Add Quote</a>
+        </button>
     </body>
 </html>
 
