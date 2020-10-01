@@ -1,13 +1,13 @@
 # ************************************************************
 # Sequel Pro SQL dump
-# Version 4541
+# Version 5446
 #
-# http://www.sequelpro.com/
+# https://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.31)
-# Database: OfficeQuotesDB1
-# Generation Time: 2020-09-29 14:56:45 +0000
+# Database: OfficeQuotesDB2
+# Generation Time: 2020-10-01 11:06:25 +0000
 # ************************************************************
 
 
@@ -15,6 +15,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
+SET NAMES utf8mb4;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
@@ -42,7 +43,7 @@ VALUES
 	(3,'images/MS3.jpg',4),
 	(4,'images/MS4.jpg',8),
 	(5,'images/MS5.jpg',10),
-	(6,'images/prisongmike.jpg',13),
+	(6,'https://vignette.wikia.nocookie.net/theoffice/images/7/7d/MichaelScottPaperCompany.jpg/revision/latest/top-crop/width/360/height/360?cb=20091216005626',13),
 	(7,'images/toby.png',3),
 	(8,'images/PB1.jpg',5),
 	(9,'images/PB2.jpg',20),
@@ -54,16 +55,21 @@ VALUES
 	(15,'images/JH2.jpg',NULL),
 	(16,'images/DW1.jpg',6),
 	(17,'images/DS2.jpg',12),
-	(18,'images/DS3.jpg',21),
+	(18,'images/DS3.jpg',NULL),
 	(19,'images/DS4.jpg',22),
 	(20,'images/DS5.jpg',NULL),
-	(21,'images/DS6.jpg',NULL),
-	(22,'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhIVFRUXFRUVFRcVFRUXFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHR0tLS0tLS0tLS0tLSstLS0tLS0tLS0rLSstLS0tKy0tLS0tKy0tLSstLS0tLS0tLSstMv/AABEIAKgBLAMBIgACEQEDEQH/',19),
+	(21,'images/DS6.jpg',21),
+	(22,'https://img1.looper.com/img/gallery/what-craig-robinson-has-been-doing-since-playing-darryl-on-the-office/intro-1574368248.jpg',19),
 	(23,'https://4.bp.blogspot.com/-MEnLCZOFlwc/VRYW1vg37QI/AAAAAAAACdY/EKC8ND58_z8/s1600/darryl-philbin%2Brandom%2Bquote%2Bgenerator.jpg',18),
 	(24,'https://imgix.bustle.com/uploads/image/2017/12/20/e0364c80-0232-49bf-a37d-12d1e4a67940-screen-shot-2017-12-19-at-94303-pm.png?w=960&h=540&fit=crop&crop=faces&auto=format%2Ccompress&cs=srgb&q=70',17),
-	(25,'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExIVFRUXFRUXFhUWFRUVFRUXFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGS0dHR0rLS0tLS0rKy0tLS0tLS0tLS0tLS0rKy0tLS0tLS0tLS0tLS0tLS03Kzc3LSs3NysrLf/AABEIALEBHAMBIgACEQEDEQH/',14),
+	(25,'https://images.dailyhive.com/20181010151500/28575783_10155770316269748_2999681741317467413_n.jpg',14),
 	(26,'https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1333&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F01%2Fthe-office-2000.jpg',15),
-	(27,'https://img.huffingtonpost.com/asset/563a4a281800002a00303d55.jpeg?ops=crop_2_9_1351_693,scalefit_630_noupscale',16);
+	(27,'https://img.huffingtonpost.com/asset/563a4a281800002a00303d55.jpeg?ops=crop_2_9_1351_693,scalefit_630_noupscale',16),
+	(35,'https://media1.popsugar-assets.com/files/thumbor/K1D7QkBPqHfPhJLjW88ci7W-bcs/193x0:2338x1126/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-/2020/03/03/980/n/1922283/6824f0f95e5edab00ab593.40065966_.png',22),
+	(46,'https://vignette.wikia.nocookie.net/theoffice/images/2/27/Holly2.jpg/revision/latest?cb=20101114061802',23),
+	(47,'https://www.datocms-assets.com/151/1471782473-holly.jpg?w=500&fm=jpg',48),
+	(111,'https://vignette.wikia.nocookie.net/theoffice/images/7/7a/Kevin1.jpg/revision/latest?cb=20140726053223',96),
+	(112,'https://relevantmagazine.com/wp-content/uploads/2019/05/michaelscottimpressions.jpg',97);
 
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -78,7 +84,7 @@ CREATE TABLE `quotes` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `quote` varchar(500) DEFAULT NULL,
   `whoSaidIt` varchar(100) DEFAULT NULL,
-  `episode` varchar(50) DEFAULT NULL,
+  `episode` varchar(100) DEFAULT NULL,
   `hilarity-ometer` enum('1','2','3','4','5','6','7','8','9','10') DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -101,7 +107,6 @@ VALUES
 	(11,'\"By two o\'clock Dwight will choose himself to be the assistant to his own assistant, me.\"','Jim Halpert','\'A.A.R.M\' - Season 9, Episode 22','5'),
 	(12,'\"Really Jim? You don\'t understand the difference between a slaughter house and a rendering plant? Uhhh, remind me not to lend you any dead cows or horses.\"','Dwight Schrute','\'Junior Salesman\' - Season 9, Episode 13','7'),
 	(13,'\"Just seems awfully mean. But sometimes, the ends justify the mean.\"','Michael Scott','\'Frame Toby\' - Season 5, Episode 8','9'),
-	(14,'\"You ever notice you can only ooze two things? Sexuality and pus. Man, I tell ya.\"','Creed Bratton','\'Body Language\' - Season 6, Episode 23','7'),
 	(15,'\"I\'ve been involved in a number of cults, both as a leader and a follower. You have more fun as a follower. But you make more money as a leader.\"','Creed Bratton','\'Blood Drive\' - Season 5, Episode 16','6'),
 	(16,'\"Nobody steals from Creed Bratton and gets away with it. The last person to do this disappeared. His name: Creed Bratton.\"','Creed Bratton','\'Crime Aid\' - Season 5, Episode 4','7'),
 	(17,'\"Look, I know the reason that you guys became accountants is \'cause you\'re not good at interacting with people. But guess what? From now on, you guys are no longer losers. So gives yourselves a round of applause.\"','Kelly Kapoor','\'Product Recall\' - Season 3, Episode 20','4'),
@@ -109,7 +114,10 @@ VALUES
 	(19,'\"I taught Mike some, uh, some phrases to help with his interracial conversation. You know, stuff like, \"fleece it out,\" \"going mach 5,\" \"dinkin\' flicka.\" You know, things us Negroes say.\"','Darryl Philbin','\'Casino Night\' - Season 2, Episode 22','6'),
 	(20,'\"Well I just wanna take a minute to talk to you all about something very serious. Once every hour, someone is involved in an internet scam. That man is Michael Scott. He\'s supporting about twenty Nigerian princesses.\"','Pam Beesly','\'Stress Relief\' - Season 5, Episode 13','5'),
 	(21,'\"Five minutes ahead of schedule... Right on schedule.\"','Dwight Shrute','\'Scott\'s Tots\' - Season 6, Episode 12','6'),
-	(22,'\"Would I ever leave this company? Look, I\'m all about loyalty. In fact, I feel like part of what I\'m being paid for here is my loyalty. But if there were somewhere else that valued loyalty more highly, I\'m going wherever they value loyalty the most.\"','Dwight Shrute','\'Halloween\' - Season 2, Episode 5','6');
+	(22,'\"Would I ever leave this company? Look, I\'m all about loyalty. In fact, I feel like part of what I\'m being paid for here is my loyalty. But if there were somewhere else that valued loyalty more highly, I\'m going wherever they value loyalty the most.\"','Dwight Shrute','\'Halloween\' - Season 2, Episode 5','6'),
+	(48,'\"I cannot keep myself from Michael. Everything he does is sexy. He has this undeniable animal magnetism. He\'s a jungle cat. The man exudes sex. He can put both his legs behind his head.\"','Holly Flax','\'PDA\' - Season 7, Episode 16','7'),
+	(96,'\"I had Martin explain to me three times what he got arrested for, becauseâ€¦ it sounds an awful lot like what I do here every day.\"','Kevin Malone','\'The Convict\' - Season 3, Episode 9','6'),
+	(97,'\"It\'s Britney, bitch\"','Michael Scott','\'The Michael Scott Paper Company\' - Season 5, Episode 23','7');
 
 /*!40000 ALTER TABLE `quotes` ENABLE KEYS */;
 UNLOCK TABLES;

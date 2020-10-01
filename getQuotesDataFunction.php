@@ -9,7 +9,7 @@ require_once '.' . DIRECTORY_SEPARATOR . 'dbConnectionFunction.php';
  * @return mixed
  */
 function getQuotesData($db) :array {
-    $query = $db->prepare('SELECT * FROM `quotes` INNER JOIN `images` ON `quotes`.`id` = `images`.`quotes-ID`');
+    $query = $db->prepare('SELECT * FROM `quotes` LEFT JOIN `images` ON `quotes`.`id` = `images`.`quotes-ID`');
     $query->execute();
     $quotes = $query->fetchAll();
     return $quotes;

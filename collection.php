@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <?php
 require_once '.' . DIRECTORY_SEPARATOR . 'displayDBContentFunction.php';
 require_once '.' . DIRECTORY_SEPARATOR . 'dbConnectionFunction.php';
@@ -6,6 +7,7 @@ require_once '.' . DIRECTORY_SEPARATOR . 'getQuotesDataFunction.php';
 
 $db=dbConnection();
 $quotes = getQuotesData($db);
+
 ?>
 
 <html lang="en">
@@ -28,6 +30,9 @@ $quotes = getQuotesData($db);
         <div class = "grids">
             <?php echo displayDBContent($quotes);?>
         </div>
+        <button class="addQuoteLink">
+            <a href="addQuote.php">Add Quote</a>
+        </button>
     </body>
 </html>
 
