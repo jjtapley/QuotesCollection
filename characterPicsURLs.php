@@ -64,7 +64,7 @@ $characterPics = [
     ],
     'Ryan Howard'=>[
         'https://img.cinemablend.com/filter:scale/quill/5/9/1/3/3/b/59133b62f9e744d0f1b82e9869931e5c6d9da800.jpg?mw=600',
-        'https://static.wikia.nocookie.net/loveinterest/images/5/5c/3458_6_full.jpg/revision/latest/scale-to-width-down/340?cb=20130526104055',
+        'https://i.pinimg.com/originals/56/4b/4e/564b4e2e3c2d2f8ef17798b97c0628b0.jpg',
     ],
     'Kelly Kapoor'=>[
         'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/entertainment/Screen-Shot-2019-12-17-at-124022-PM-5182f6de576537d9a9a68f3a6b80ead9.jpg',

@@ -4,11 +4,10 @@
 require_once '.' . DIRECTORY_SEPARATOR . 'displayDBContentFunction.php';
 require_once '.' . DIRECTORY_SEPARATOR . 'dbConnectionFunction.php';
 require_once '.' . DIRECTORY_SEPARATOR . 'getQuotesDataFunction.php';
-require_once '.' . DIRECTORY_SEPARATOR . 'sendQuotesDataFunction.php';
-require_once '.' . DIRECTORY_SEPARATOR . 'sendImageDataFunction.php';
-require_once '.' . DIRECTORY_SEPARATOR . 'selectImageFunction.php';
+
 $db=dbConnection();
 $quotes = getQuotesData($db);
+
 ?>
 
 <html lang="en">
@@ -37,19 +36,3 @@ $quotes = getQuotesData($db);
     </body>
 </html>
 
-<?php
-
-if (isset($_POST['quote']) && isset($_POST['charName']) && isset($_POST['epName']) && isset($_POST['epNum']) && isset($_POST['season']) && isset($_POST['rating'])) {
-    $quote = '"' . $_POST['quote'] . '"';
-    $character = $_POST['charName'];
-    $episode = "'" . $_POST['epName'] . "'" . " - Season " . $_POST['season'] . ", Episode " . $_POST['epNum'];
-    $rating = $_POST['rating'];
-    $image = selectImage($character, $characterPics);
-    sendImageData($db, $image);
-    sendQuotesData($db, $quote, $character, $episode, $rating);
-}
-
-
-var_dump($_POST);
-
-?>
