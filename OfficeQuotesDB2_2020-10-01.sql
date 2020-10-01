@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.31)
 # Database: OfficeQuotesDB2
-# Generation Time: 2020-10-01 08:35:12 +0000
+# Generation Time: 2020-10-01 11:06:25 +0000
 # ************************************************************
 
 
@@ -68,9 +68,8 @@ VALUES
 	(35,'https://media1.popsugar-assets.com/files/thumbor/K1D7QkBPqHfPhJLjW88ci7W-bcs/193x0:2338x1126/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-/2020/03/03/980/n/1922283/6824f0f95e5edab00ab593.40065966_.png',22),
 	(46,'https://vignette.wikia.nocookie.net/theoffice/images/2/27/Holly2.jpg/revision/latest?cb=20101114061802',23),
 	(47,'https://www.datocms-assets.com/151/1471782473-holly.jpg?w=500&fm=jpg',48),
-	(68,'https://relevantmagazine.com/wp-content/uploads/2019/05/michaelscottimpressions.jpg',49),
-	(69,'https://relevantmagazine.com/wp-content/uploads/2019/05/michaelscottimpressions.jpg',49),
-	(70,'https://consequenceofsound.net/wp-content/uploads/2019/06/Steve-Carell-as-Michael-Scott-.jpg?quality=80&w=807',49);
+	(111,'https://vignette.wikia.nocookie.net/theoffice/images/7/7a/Kevin1.jpg/revision/latest?cb=20140726053223',96),
+	(112,'https://relevantmagazine.com/wp-content/uploads/2019/05/michaelscottimpressions.jpg',97);
 
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -85,7 +84,7 @@ CREATE TABLE `quotes` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `quote` varchar(500) DEFAULT NULL,
   `whoSaidIt` varchar(100) DEFAULT NULL,
-  `episode` varchar(50) DEFAULT NULL,
+  `episode` varchar(100) DEFAULT NULL,
   `hilarity-ometer` enum('1','2','3','4','5','6','7','8','9','10') DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -116,7 +115,9 @@ VALUES
 	(20,'\"Well I just wanna take a minute to talk to you all about something very serious. Once every hour, someone is involved in an internet scam. That man is Michael Scott. He\'s supporting about twenty Nigerian princesses.\"','Pam Beesly','\'Stress Relief\' - Season 5, Episode 13','5'),
 	(21,'\"Five minutes ahead of schedule... Right on schedule.\"','Dwight Shrute','\'Scott\'s Tots\' - Season 6, Episode 12','6'),
 	(22,'\"Would I ever leave this company? Look, I\'m all about loyalty. In fact, I feel like part of what I\'m being paid for here is my loyalty. But if there were somewhere else that valued loyalty more highly, I\'m going wherever they value loyalty the most.\"','Dwight Shrute','\'Halloween\' - Season 2, Episode 5','6'),
-	(48,'\"I cannot keep myself from Michael. Everything he does is sexy. He has this undeniable animal magnetism. He\'s a jungle cat. The man exudes sex. He can put both his legs behind his head.\"','Holly Flax','\'PDA\' - Season 7, Episode 16','7');
+	(48,'\"I cannot keep myself from Michael. Everything he does is sexy. He has this undeniable animal magnetism. He\'s a jungle cat. The man exudes sex. He can put both his legs behind his head.\"','Holly Flax','\'PDA\' - Season 7, Episode 16','7'),
+	(96,'\"I had Martin explain to me three times what he got arrested for, becauseâ€¦ it sounds an awful lot like what I do here every day.\"','Kevin Malone','\'The Convict\' - Season 3, Episode 9','6'),
+	(97,'\"It\'s Britney, bitch\"','Michael Scott','\'The Michael Scott Paper Company\' - Season 5, Episode 23','7');
 
 /*!40000 ALTER TABLE `quotes` ENABLE KEYS */;
 UNLOCK TABLES;
