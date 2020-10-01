@@ -92,11 +92,22 @@ h3, .page2header h1 {
     padding-top: 4%;
 }
 
-input, select, label {
+input, select, label, button {
     width: 80%;
     display: inline-block;
     padding: 2%;
     border-radius: 8px;
+}
+
+button {
+    margin-bottom: 6%;
+}
+
+input[type=submit]{
+    background-color: green;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 input, select {
@@ -107,11 +118,6 @@ input, select {
 input[type=submit] {
     margin: 2%;
 }
-
-input[value], #grey {
-    color: grey;
-}
-
 
 /*Responsivity commands*/
 @media only screen and (max-width: 1200px) {
