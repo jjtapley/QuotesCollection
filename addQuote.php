@@ -111,7 +111,7 @@ $db = dbConnection();
                 </select>
                 <input type="submit" value="Submit">
             </form>
-            <a href="collection.php"><button>Back to Collection</button></a>
+            <a href="collection.php" class="returnBTN"><button>Back to Collection</button></a>
         </main>
     </body>
 </html>

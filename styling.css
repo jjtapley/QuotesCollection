@@ -99,6 +99,10 @@ input, select, label {
     border-radius: 8px;
 }
 
+.returnBTN {
+    width: 80%;
+}
+
 input, select {
     border: 1px solid;
 
