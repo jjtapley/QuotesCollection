@@ -4,7 +4,8 @@ $characterPics = [
     'Michael Scott'=>[
         'https://relevantmagazine.com/wp-content/uploads/2019/05/michaelscottimpressions.jpg',
         'https://ftw.usatoday.com/wp-content/uploads/sites/90/2020/04/xxx-zx39448-d-office-prime-zx394-e1587392862278.jpg?w=1000&h=600&crop=1' ,
-        'https://consequenceofsound.net/wp-content/uploads/2019/06/Steve-Carell-as-Michael-Scott-.jpg?quality=80&w=807'
+        'https://consequenceofsound.net/wp-content/uploads/2019/06/Steve-Carell-as-Michael-Scott-.jpg?quality=80&w=807',
+        'https://media.npr.org/assets/img/2011/04/27/nup_136341_0184-b75de06bfca6dac5f8f751bf1284dfdc71739af8-s800-c85.jpg',
     ],
     'Dwight Schrute'=>[
         'https://vignette.wikia.nocookie.net/0bafa03d-495d-4153-a2be-89a999d1bb49/scale-to-width-down/800',
@@ -83,7 +84,7 @@ $characterPics = [
         'https://mattwargo.files.wordpress.com/2010/10/theoffice_toby_temple_degree_2.jpg',
     ],
     'Holly Flax'=>[
-        'https://vignette.wikia.nocookie.net/theoffice/images/2/27/Holly2.jpg/revision/latest?cb=20101114061802',
+        'https://y.yarn.co/db34b142-0cb0-43b9-8e05-4e2e9ea57c31_screenshot.jpg',
         'https://www.datocms-assets.com/151/1471782473-holly.jpg?w=500&fm=jpg',
     ]
 ];

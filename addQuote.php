@@ -2,9 +2,6 @@
 
 <?php
 require_once '.' . DIRECTORY_SEPARATOR . 'dbConnectionFunction.php';
-require_once '.' . DIRECTORY_SEPARATOR . 'sendQuotesDataFunction.php';
-require_once '.' . DIRECTORY_SEPARATOR . 'sendImageDataFunction.php';
-require_once '.' . DIRECTORY_SEPARATOR . 'selectImageFunction.php';
 $db = dbConnection();
 ?>
 
@@ -21,7 +18,7 @@ $db = dbConnection();
             <h1>Add a Quote</h1>
         </header>
         <main>
-            <form method="post" action="sendQuotesDataFunction.php">
+            <form method="post" action="collection.php">
                 <label for="quote">Quote:</label>
                 <input type="text" id="quote" name="quote" onfocus="this.value=''" value="-- Type quote - don't worry about quote marks! --">
                 <label for="character">Who Said It?:</label>
@@ -111,17 +108,7 @@ $db = dbConnection();
                 </select>
                 <input type="submit" value="Submit">
             </form>
-
-            <?php
-            $quote = $_POST['quote'];
-            $character = $_POST['charName'];
-            $episode = "'" . $_POST['epName'] . "'" . " - Season " . $_POST['season'] . ", Episode " . $_POST['epNum'];
-            $rating = $_POST['rating'];
-            $image = selectImage($character, $characterPics);
-            sendImageData($db, $image);
-            sendQuotesData($db, $quote, $character, $episode, $rating);
-            ?>
-
         </main>
     </body>
 </html>
+

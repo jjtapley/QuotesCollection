@@ -5,7 +5,7 @@
  * @param $db
  * @param $image
  */
-function sendImageData(PDO $db, string $image) :void {
+function sendImageData(PDO $db, string $image)  {
     $query1 = $db->prepare('SELECT `id` FROM `quotes` ORDER BY `id` desc LIMIT 1;');
     $query1->execute();
     $results = $query1->fetchAll();
