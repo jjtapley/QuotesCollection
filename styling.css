@@ -103,6 +103,19 @@ input, select, label, .returnBTN button {
     margin-bottom: 6%;
 }
 
+.success {
+    position: absolute;
+    color: darkslateblue;
+    top: 0;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 input[type=submit]{
     background-color: green;
     color: #000000;

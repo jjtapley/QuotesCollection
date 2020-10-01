@@ -125,7 +125,7 @@ if (isset($_POST['quote']) && isset($_POST['charName']) && isset($_POST['epName'
     $image = selectImage($character, $characterPics);
     sendImageData($db, $image);
     sendQuotesData($db, $quote, $character, $episode, $rating);
-    echo '<h1>Quote Successfully Added!</h1>';
+    echo '<h1 class="success">Quote Successfully Added!</h1>';
 }
 ?>
 
