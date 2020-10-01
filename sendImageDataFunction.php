@@ -1,6 +1,6 @@
 <?php
 
-/**Function
+/**Function finds the most recent quote id in database and adds 1 to get new quote-ID, then send image plus new quote-ID to DB
  *
  * @param $db
  * @param $image
